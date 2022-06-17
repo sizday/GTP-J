@@ -74,12 +74,13 @@ def is_palindrome(string):
 
 
 def is_number(string):
-    """Check a string is a number"""
+    """Check a string is a digit"""
     try:
-        float(string)
-        return True
+        int(string)
     except ValueError:
         return False
+    else:
+        return True
 
 
 def extra_end(string):
